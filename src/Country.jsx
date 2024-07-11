@@ -30,6 +30,7 @@ const Country = () => {
     const filtered = countries.filter((country) =>
       country.name.toLowerCase().includes(query)
     );
+    console.log(filtered); 
     setFilteredCountries(filtered);
   };
 
