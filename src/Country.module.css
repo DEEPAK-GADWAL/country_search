@@ -25,3 +25,16 @@
   gap: 10px;
 
 }
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.searchBar input {
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 8px 7px 0px grey;
+}
