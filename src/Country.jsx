@@ -30,7 +30,6 @@ const Country = () => {
     const filtered = countries.filter((country) =>
       country.name.toLowerCase().includes(query)
     );
-    console.log(filtered); 
     setFilteredCountries(filtered);
   };
 
@@ -42,11 +41,12 @@ const Country = () => {
           placeholder="Search country"
           type="search"
           value={searchQuery}
+          className="search-input"
         />
       </div>
       <div className={styles.mainCard}>
         {filteredCountries.map((country, idx) => (
-          <div key={idx} className={styles.cardWrapper}>
+          <div key={idx} className={`${styles.cardWrapper} countryCard`}>
             <img src={country.flag} alt={country.name} className={styles.cardImg} />
             <h4>{country.name}</h4>
           </div>
